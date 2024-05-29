@@ -1,17 +1,47 @@
-import React, {useState} from 'react'
 
-function Navbar() {
+import './NavBar.css'
+import React, {useState} from 'react'
+import hamburgerIcon from '../assets/icons8-hamburger-menu-50.png'
+
+function NavBar() {
+
+    const [open,setOpen] = useState(false)
+
     return (
-       <>
-        <nav className="navbar">
-            <div className = "navbar-container">
-                <h1>test</h1>
-                <h1>test1</h1>
-                <h1>test2</h1>
-            </div>
-        </nav>
-       </>
+        <div>
+            <nav class="mainNav">
+                <div class="logo">Laurence Tremblay</div>
+                <div>
+                    <ul className = "NavLinks">
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#experience">Experience</a></li>
+                        <li> <a href="#project">Projects</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <nav class="hamburgerNav">
+                <div class="logo">Laurence Tremblay</div>
+                <div class = "hamburgerMenu">
+                    <div classname="hamburgerIcon" onClick={() => setOpen(!open)}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <img classname = "image" src={hamburgerIcon} width = {50} height = {50} alt ="Logo"/>
+                    </div>
+                    <div class= {open ? "menuLinks" : "menuLinks_hide"}>
+                        <ul classname = "NavList">
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#experience">Experience</a></li>
+                            <li> <a href="#project">Projects</a></li>
+                            <li> <a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+       </div>
     )
 }
 
-export default Navbar
+export default NavBar

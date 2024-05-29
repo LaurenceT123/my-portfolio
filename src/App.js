@@ -1,11 +1,15 @@
 
 import './App.css';
-import Navbar from './Components/Navbar';
+import Avatar from './Components/Avatar/Avatar';
+import NavBar from './Components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <div class="container">
+        <NavBar />
+        <Avatar/>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,84 @@
+.aboutMeSection
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile
+{
+    display: flex;
+    align-items: center;
+    padding:2vw;
+    height: 600px;
+    justify-content: space-evenly;
+    width:70%;
+}
+
+/*Profile Section*/
+.sectionPic
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw;
+}
+
+.sectionPic .sectionText
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.sectionPic .sectionText .title
+{
+    text-align: center;
+}
+
+.sectionPic .sectionText .section_text_p2
+{
+    text-align: center;
+}
+
+/*About Me Section*/
+.summary
+{
+    padding: 2vw;
+}
+
+.summary .about_me
+{
+    text-align: center;
+}
+
+.summary .section_text_p2
+{
+    text-align: center;
+}
+
+.sectionPic .sectionText .socialLinks
+{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.sectionPic .sectionText .socialLinks .resume
+{
+   cursor:pointer;
+}
+
+.sectionPic .sectionText .socialLinks .linkedin
+{
+   cursor:pointer;
+}
+
+.sectionPic .sectionText .socialLinks .github
+{
+   cursor:pointer;
+}
