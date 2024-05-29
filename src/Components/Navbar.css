@@ -13,27 +13,27 @@
     align-items:center;
     height:17vh;
     padding: 1.2vw;
-    background-color: rgb(34, 51, 79);
+    background-color: rgb(255, 255, 255);
 }
 
 a {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 a:hover
 {
-    color:rgb(0, 0, 0);
+    color:rgb(115, 115, 115);
     text-decoration: underline;
     text-underline-offset: 0.5rem;
-    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-color: rgb(122, 122, 122);
 }
 
 .logo
 {
     font-size:2rem;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 .logo:hover
@@ -46,7 +46,7 @@ a:hover
 {
     display: none;
     justify-content: space-around;
-    background-color: rgb(34, 51, 79);
+    background-color: rgb(255, 255, 255);
 }
 
 .hamburgerMenu

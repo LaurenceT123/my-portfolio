@@ -1,7 +1,7 @@
 
 import './NavBar.css'
 import React, {useState} from 'react'
-import hamburgerIcon from '../assets/icons8-hamburger-menu-50.png'
+import hamburgerIcon from '../assets/hamburger-menu.png'
 
 function NavBar() {
 
