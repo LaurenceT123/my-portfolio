@@ -48,22 +48,6 @@
     color: white;
 }
 
-/*About Me Section*/
-.summary
-{
-    padding: 2vw;
-}
-
-.summary .about_me
-{
-    text-align: center;
-}
-
-.summary .section_text_p2
-{
-    text-align: center;
-}
-
 .sectionPic .sectionText .socialLinks
 {
     padding-top: 10px;

@@ -3,9 +3,10 @@ import './NavBar.css'
 import React, {useState} from 'react'
 import hamburgerIcon from '../assets/hamburger-menu.png'
 
-function NavBar() {
+function NavBar({ onSelectionClick }) 
+{
 
-    const [open,setOpen] = useState(false)
+    const [open,setOpen] = useState(false);
 
     return (
         <div>
@@ -13,7 +14,7 @@ function NavBar() {
                 <div class="logo">Laurence Tremblay</div>
                 <div>
                     <ul className = "NavLinks">
-                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#about" onClick={() => onSelectionClick("about")}>About</a></li>
                         <li> <a href="#experience">Experience</a></li>
                         <li> <a href="#project">Projects</a></li>
                         <li> <a href="#contact">Contact</a></li>

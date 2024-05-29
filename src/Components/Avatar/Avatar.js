@@ -8,7 +8,9 @@ import github from '../../assets/icons8-github-50 (1).png'
 import resumeIcon from '../../assets/icons8-resume-50 (1).png'
 
 /* Avatar component, this includes the about me section and profile */
-function Avatar() {
+function Avatar() 
+{
+
   return (
     <div class = "aboutMeSection">
         <div class = "profile">
@@ -23,14 +25,6 @@ function Avatar() {
                 <img class = "github" src={github} alt="MyGithub" onClick={() => window.open('https://github.com/LaurenceT123',"_blank")}/>
               </div>
             </div>
-          </div>
-        </div>
-      
-
-      <div class = "summary">
-          <div class ="sectionText">
-            <h1 class="about_me">About Me</h1>
-            <p class = "seciton">Experienced and dedicated Computer Science graduate with a proven track record of academic excellence and hands-on project involvement. Proficient in programming in Python, Java, C# and JavaScript. Additionally, skilled in collaborative problem-solving, adaptability, and creativity. Seeking a paid internship or career opportunity to utilize my skills and passion for technology</p>
           </div>
         </div>
     </div>
