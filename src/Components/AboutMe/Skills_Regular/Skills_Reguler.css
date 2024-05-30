@@ -1,0 +1,59 @@
+
+
+.skills_regular_container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.skill_box
+{
+    background-color: rgb(8, 48, 68);
+    height:80%;
+    width:20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skill_box .skillText
+{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+.skill_box1
+{
+    background-color: rgb(8, 48, 68);
+    height:80%;
+    width:20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text 
+{
+    color:white;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.skill_box2
+{
+    background-color: rgb(8, 48, 68);
+    height:80%;
+    width:20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

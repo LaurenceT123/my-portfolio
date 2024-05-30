@@ -2,7 +2,7 @@
 import './App.css';
 import Avatar from './Components/Avatar/Avatar';
 import NavBar from './Components/NavBar';
-import AboutMe from './Components/AboutMe/AboutMe'
+import AboutMe from './Components/AboutMe/AboutMe';
 import { useRef } from 'react';
 
 function App() {

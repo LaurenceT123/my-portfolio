@@ -1,15 +1,25 @@
 /*About Me Section*/
+
+.mainAboutMeSection
+{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
 .summary
 {
     padding: 2vw;
-    width: 70%;
-    height: 700px;
+    width: 80%;
+    height: 650px;
     display: flex;
     flex-direction: column;
+
 }
 
 .summary .sectionText
 {
+    display: flex;
+    flex-direction: column;
     gap:40px;
     padding: 20px;
 }
@@ -22,4 +32,12 @@
 .summary .section
 {
     text-align: center;
+    line-height: 2;
+}
+
+.mainAboutMeSection .skillContainer
+{
+    display: flex;
+    width: 100%;
+    height:100%;
 }
