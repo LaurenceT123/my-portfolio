@@ -85,3 +85,12 @@
     height: 800px;
   }
 }
+
+@media screen and (max-width:700px)
+{
+  .profileimage
+  {
+    width:300px;
+    height: 300px;
+  }
+}

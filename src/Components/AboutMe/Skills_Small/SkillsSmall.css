@@ -1,7 +1,8 @@
 .skills_small_container
 {
+
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-direction: column;
     width: 100%;
     padding: 20px;
@@ -13,6 +14,7 @@
     background-color: rgb(8, 48, 68);
     height:90%;
     width:50%;
+    position: relative;
 }
 
 .skill_small_box .Skillcomponents
@@ -26,7 +28,16 @@
 
 .skill_small_box .gif_click
 {
-    display:flex;
-    bottom:0;
-    position: relative;
+    position: absolute; /* Position the GIF relative to its parent (.skill_small_box) */
+    bottom: 0;
+    left: 0;
+}
+
+
+@media screen and (max-width:700px)
+{
+  .text
+  {
+    font-size: 10px;
+  }
 }
