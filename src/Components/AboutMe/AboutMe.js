@@ -1,10 +1,14 @@
 import React from 'react'
 import './AboutMe.css'
+import { useMediaQuery } from 'react-responsive';
 
-import Skills_Regular from './Skills_Regular/Skills_Regular'
+import SkillsRegular from './Skills_Regular/SkillsRegular'
+import SkillsSmall from './Skills_Small/SkillsSmall';
 
 function AboutMe({ reference }) 
 {
+
+  const isMobile = useMediaQuery({ maxWidth: 1000 });
 
   return (
     <div class = "mainAboutMeSection" ref = {reference}>
@@ -15,8 +19,7 @@ function AboutMe({ reference })
           </div>
 
           <div class = "skillContainer">
-            <Skills_Regular/>
-
+              { isMobile ? ( <SkillsSmall/>) : (<SkillsRegular/>)}
           </div>
 
         </div>

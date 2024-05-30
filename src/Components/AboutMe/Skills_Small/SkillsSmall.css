@@ -1,0 +1,32 @@
+.skills_small_container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.skill_small_box
+{
+    background-color: rgb(8, 48, 68);
+    height:90%;
+    width:50%;
+}
+
+.skill_small_box .Skillcomponents
+{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.skill_small_box .gif_click
+{
+    display:flex;
+    bottom:0;
+    position: relative;
+}

@@ -1,25 +1,20 @@
 import React from 'react'
-import './Skills_Reguler.css'
+import './SkillsReguler.css'
 
-function Skills_Regular() {
+function SkillsRegular() {
   return (
     <div class="skills_regular_container">
         <div class="skill_box">
-            <div class="skillText">
-                SKILLS
+                <div class = "text">
+                <li>Java</li>
+                <li>Python</li>
+                <li>Javascript (React)</li>
+                <li>C#</li>
             </div>
         </div>
 
         <div class="skill_box1">
             <div class = "text">
-                Languages
-                <li>Java</li>
-                <li>Python</li>
-                <li>Javascript (React)</li>
-            </div>
-
-            <div class = "text">
-              Tools and Frameworks
                 <li>Unity</li>
                 <li>Figma</li>
                 <li>Microsoft Azure</li>
@@ -47,4 +42,4 @@ function Skills_Regular() {
   )
 }
 
-export default Skills_Regular
+export default SkillsRegular
