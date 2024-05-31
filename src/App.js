@@ -1,9 +1,11 @@
 
 import './App.css';
+import { useRef } from 'react';
+
 import Avatar from './Components/Avatar/Avatar';
 import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe/AboutMe';
-import { useRef } from 'react';
+import Experience from './Components/Experience/Experience';
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
         <NavBar onSelectionClick={handleSectionClick}/>
         <Avatar/>
         <AboutMe reference= {aboutMeSection}/>
+        <Experience/>
       </div>
     </div>
   );
