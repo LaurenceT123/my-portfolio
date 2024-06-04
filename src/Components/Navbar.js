@@ -11,7 +11,7 @@ function NavBar({ onSelectionClick })
     return (
         <div>
             <nav class="mainNav">
-                <div class="logo">Laurence Tremblay</div>
+                <div class="logo"></div>
                 <div>
                     <ul className = "NavLinks">
                         <li> <a href="#about" onClick={() => onSelectionClick("about")}>About</a></li>
