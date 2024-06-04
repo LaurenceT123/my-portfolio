@@ -31,7 +31,7 @@ function App() {
         <NavBar onSelectionClick={handleSectionClick}/>
         <Avatar/>
         <AboutMe reference= {aboutMeSection}/>
-        <Experience/>
+        <Experience reference = {experienceSection}/>
       </div>
     </div>
   );

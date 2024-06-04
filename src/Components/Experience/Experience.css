@@ -1,0 +1,117 @@
+.experienceMain
+{
+    width: 100%;
+    height: 900px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Experience Degree*/
+.experienceMain .experienceHeader
+{
+    text-align: center;
+    padding: 30px;
+}
+
+.experienceMain .degreeSection
+{
+    height: 120px;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.experienceMain .degreeSection .box_experience
+{
+    height: 80%;
+    width: 40%;
+    padding:2px;
+    background:white;
+    border-radius: 1rem;
+    border: 3.5px solid rgb(8, 48, 68);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experienceMain .degreeSection .box_experience .text_experience
+{
+    text-align: center;
+    padding:6px;
+}
+
+.experienceMain .degreeSection .box_experience .school_name
+{
+    text-align: center;
+}
+
+.experienceMain .degreeSection .box_experience .box_experience_header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Resume Experience List*/
+.experienceMain .resumeList
+{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.experienceMain .resumeList .longLine
+{
+    width:5px;
+    height: 90%;
+    background-color: rgb(8, 48, 68);
+}
+
+.experienceMain .resumeList .experience_info
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.experienceMain .resumeList .experience_info .experience_container
+{
+    width: 100%;
+}
+.experienceMain .resumeList .experience_info .top_experience
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.experienceMain .resumeList .experience_info .experience_list
+{
+    padding-left: 20px;
+}
+
+@media screen and (max-width:1000px)
+{
+    .experienceMain .degreeSection
+    {
+        width:90%;
+        height: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
