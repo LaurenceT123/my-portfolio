@@ -33,7 +33,7 @@ function App() {
         <Avatar/>
         <AboutMe reference= {aboutMeSection}/>
         <Experience reference = {experienceSection}/>
-        <Projects/>
+        <Projects reference = {projectSection}/>
       </div>
     </div>
   );

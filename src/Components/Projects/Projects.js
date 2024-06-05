@@ -4,10 +4,11 @@ import './Projects.css'
 import video1 from '../../assets/projectImages/SpotifyApi.mp4'
 import sportImg from '../../assets/projectImages/IMG_1986.jpg'
 import unityImg from '../../assets/projectImages/fulltitle.jpg'
+import portfolioImg from '../../assets/projectImages/image.png'
 
-function Projects() {
+function Projects({ reference }) {
   return (
-    <div class="ProjectsSection">
+    <div class="ProjectsSection" ref = {reference}>
       <h1>Projects</h1>
 
       <div class="ProjectScroll">
@@ -36,7 +37,14 @@ function Projects() {
                 <h2 class = "learnMoreText">Learn More</h2>
             </button>
         </div>
-            
+
+        <div class = "projectBox">
+            <img class = "video" src={portfolioImg} alt="Test"/>
+            <h2 class = "projectTitle">Portfolio Website</h2>
+            <button onClick={() => window.open('https://github.com/LaurenceT123/my-portfolio',"_blank")}>
+                <h2 class = "learnMoreText">Learn More</h2>
+            </button>
+        </div>
         
       </div>
     </div>
