@@ -7,6 +7,7 @@ import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Experience from './Components/Experience/Experience';
 import Projects from './Components/Projects/Projects';
+import ContactMe from './Components/ContactMe/ContactMe';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <AboutMe reference= {aboutMeSection}/>
         <Experience reference = {experienceSection}/>
         <Projects reference = {projectSection}/>
+        <ContactMe/>
       </div>
     </div>
   );
