@@ -29,7 +29,7 @@ function Experience({ reference })
           <div class="experience_container">
             <div class = "top_experience">
               <div class = "top_right_experience">
-                <h1> Teacher and Teacher Assistant</h1>
+                <h2> Teacher and Teacher Assistant</h2>
                 <p>Learning Individual Studies Academy (LISA)</p>
               </div>
               <p>Summer 2021 and 2022</p>
@@ -45,7 +45,7 @@ function Experience({ reference })
           <div class="experience_container">
             <div class = "top_experience">
               <div class = "top_right_experience">
-                <h1> Social Media Intern</h1>
+                <h2> Social Media Intern</h2>
                 <p>Prime Opportunities Investment Group,LLC</p>
               </div>
               <p>Summer 2019</p>
@@ -59,7 +59,7 @@ function Experience({ reference })
           <div class="experience_container">
             <div class = "top_experience">
               <div class = "top_right_experience">
-                <h1> Student Researcher</h1>
+                <h2> Student Researcher</h2>
                 <p>USC’s Young Researcher Program</p>
               </div>
               <p>Summer 2019</p>

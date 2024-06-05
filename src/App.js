@@ -6,6 +6,7 @@ import Avatar from './Components/Avatar/Avatar';
 import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Experience from './Components/Experience/Experience';
+import Projects from './Components/Projects/Projects';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Avatar/>
         <AboutMe reference= {aboutMeSection}/>
         <Experience reference = {experienceSection}/>
+        <Projects/>
       </div>
     </div>
   );
