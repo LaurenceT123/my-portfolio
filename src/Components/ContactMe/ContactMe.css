@@ -34,3 +34,27 @@
 {
     font-size: 40px;
 }
+
+.contactMeInfo:hover{
+    color:rgb(115, 115, 115);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(122, 122, 122);
+}
+
+@media screen and (max-width:650px)
+{
+
+    .ContactMeSection .contactMe_Container
+    {
+        width:400px;
+        padding:1rem 0.2rem 1rem 0.2rem;
+
+        gap:10px;
+    }
+
+    .contactMeInfo
+    {
+        font-size: 12px;
+    }
+}

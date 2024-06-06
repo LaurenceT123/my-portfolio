@@ -13,10 +13,10 @@ function ContactMe({ reference }) {
         <div class = "contactMe_Container">
           
           <img src={emailIcon} alt = "emailIcon" width = {40} height = {40}/>
-          <p>laurencetremblay10@gmail.com</p>
+          <p class = "contactMeInfo">laurencetremblay10@gmail.com</p>
 
           <img src={linkedinIcon} alt = "linkedinIcon" width = {40} height = {40}/>
-          <p>laurence-tremblay1</p>
+          <p class = "contactMeInfo">laurence-tremblay1</p>
         </div>
       </div>
     </div>
