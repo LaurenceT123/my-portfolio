@@ -35,7 +35,7 @@ function App() {
         <AboutMe reference= {aboutMeSection}/>
         <Experience reference = {experienceSection}/>
         <Projects reference = {projectSection}/>
-        <ContactMe/>
+        <ContactMe reference = {contactSection}/>
       </div>
     </div>
   );

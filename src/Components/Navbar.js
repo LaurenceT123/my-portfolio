@@ -17,13 +17,12 @@ function NavBar({ onSelectionClick })
                         <li> <a href="#about" onClick={() => onSelectionClick("about")}>About</a></li>
                         <li> <a href="#experience" onClick={() => onSelectionClick("experience")}>Experience</a></li>
                         <li> <a href="#project" onClick={() => onSelectionClick("project")}>Projects</a></li>
-                        <li> <a href="#contact">Contact</a></li>
+                        <li> <a href="#contact" onClick={() => onSelectionClick("contact")}>Contact</a></li>
                     </ul>
                 </div>
             </nav>
             
             <nav class="hamburgerNav">
-                <div class="logo">Laurence Tremblay</div>
                 <div class = "hamburgerMenu">
                     <div classname="hamburgerIcon" onClick={() => setOpen(!open)}>
                             <span></span>
@@ -36,7 +35,7 @@ function NavBar({ onSelectionClick })
                             <li> <a href="#about" onClick={() => onSelectionClick("about")}>About</a></li>
                             <li> <a href="#experience" onClick={() => onSelectionClick("experience")}>Experience</a></li>
                             <li> <a href="#project" onClick={() => onSelectionClick("project")}>Projects</a></li>
-                            <li> <a href="#contact">Contact</a></li>
+                            <li> <a href="#contact" onClick={() => onSelectionClick("contact")}>Contact</a></li>
                         </ul>
                     </div>
                 </div>

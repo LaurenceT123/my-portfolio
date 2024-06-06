@@ -107,6 +107,11 @@ a:hover
 
 }
 
+ul
+{
+    background-color: white;
+}
+
 .menuLinks.open
 {
     max-height: 300px;
