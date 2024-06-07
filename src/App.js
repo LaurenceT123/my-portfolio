@@ -35,19 +35,19 @@ function App() {
         
         <Avatar/>
 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}} viewport= {{once: true}}>
           <AboutMe reference= {aboutMeSection}/>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}} viewport= {{once: true}}>
           <Experience reference = {experienceSection}/>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}} viewport= {{once: true}}>
           <Projects reference = {projectSection}/>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}} viewport= {{once: true}}>
           <ContactMe reference = {contactSection}/>
         </motion.div>
 
