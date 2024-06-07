@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useRef } from 'react';
+import { motion} from "framer-motion"
 
 import Avatar from './Components/Avatar/Avatar';
 import NavBar from './Components/NavBar';
@@ -31,11 +32,24 @@ function App() {
     <div className="App">
       <div class="container">
         <NavBar onSelectionClick={handleSectionClick}/>
+        
         <Avatar/>
-        <AboutMe reference= {aboutMeSection}/>
-        <Experience reference = {experienceSection}/>
-        <Projects reference = {projectSection}/>
-        <ContactMe reference = {contactSection}/>
+
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+          <AboutMe reference= {aboutMeSection}/>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+          <Experience reference = {experienceSection}/>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+          <Projects reference = {projectSection}/>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration:1}}>
+          <ContactMe reference = {contactSection}/>
+        </motion.div>
 
         <nav class="specialNav">
                 <div class="logo"></div>

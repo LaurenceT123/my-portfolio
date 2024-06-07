@@ -1,42 +1,41 @@
 import React from 'react'
 import './SkillsReguler.css'
+import { motion} from "framer-motion"
 
+const fadeInAnimationVariants = {
+    initial : {opacity:0, y:100},
+    animate: (index) => ({ 
+        opacity:1,
+        y:0,
+        transition: {delay:0.5 * index}
+    }),
+}
 function SkillsRegular() {
-  return (
-    <div class="skills_regular_container">
-        <div class="skill_box">
-                <div class = "text">
-                <li>Java</li>
-                <li>Python</li>
-                <li>Javascript (React)</li>
-                <li>C#</li>
-            </div>
-        </div>
 
-        <div class="skill_box1">
-            <div class = "text">
-                <li>Unity</li>
-                <li>Figma</li>
-                <li>Microsoft Azure</li>
-                <li>Canva</li>
-                <li>Blender</li>
-                <li>Tensorflow</li>
-            </div>
-
-        </div>
-
-        <div class="skill_box2">
-            <div class = "text">
-                <li>Lesson Planning</li>
-                <li>Dependable</li>
-                <li>Problem Solving</li>
-                <li>Critical Thinking</li>
-                <li>Creative</li>
-                <li>Team Collaboration</li>
-                <li>Time Management</li>
-            </div>
-
-        </div>
+    const skillBoxes = [
+        ["Java", "Python", "Javascript (React)", "C#"],
+        ["Unity", "Figma", "Microsoft Azure", "Canva", "Blender", "Tensorflow"],
+        ["Lesson Planning", "Dependable", "Problem Solving", "Critical Thinking", "Creative", "Team Collaboration", "Time Management"]
+    ];
+  
+    return (
+    <div class="skills_regular_container" >
+        {skillBoxes.map((skills, index) => (
+            <motion.div 
+                className={`skill_box${index}`} 
+                    key={index}
+                    initial = "initial" 
+                    whileInView="animate" 
+                    viewport= {{once: true}} 
+                    variants = {fadeInAnimationVariants} 
+                    custom={index}>
+                        <div className="text">
+                            {skills.map((skill, i) => (
+                                <li key={i}>{skill}</li>
+                            ))}
+                        </div>
+            </motion.div>
+            ))}
       
     </div>
   )
